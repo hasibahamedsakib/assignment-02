@@ -47,8 +47,13 @@
   background-color: var(--darkOrange);
   color: var(--white);
   cursor: pointer;
+  transition: 0.3s;
+  border: 2px solid var(--darkOrange);
 }
-
+.btn_primary:hover {
+  color: var(--darkOrange);
+  background-color: transparent;
+}
 /* Header section start */
 
 header {
@@ -125,4 +130,65 @@ header {
 }
 .feature_text .orange {
   color: var(--darkOrange);
+}
+
+/* experiance section */
+.experience {
+  padding: 130px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.line {
+  display: flex;
+  gap: 20px;
+}
+.experiance_image > img {
+  max-width: 100%;
+}
+.experiance_text .row_line {
+  width: 5px;
+  height: 106px;
+  background-color: var(--darkOrange);
+  display: block;
+}
+.experiance_text {
+  width: 560px;
+  padding-right: 30px;
+}
+.experiance_text > p {
+  padding: 10px;
+}
+.text_element {
+  margin: 20px 0;
+  padding: 30px;
+  box-shadow: 2px 2px 20px #f8f8f8;
+  border-radius: 5px;
+}
+.text_element > h4 {
+}
+.text_element > p {
+  padding: 0;
+  margin-top: 5px;
+}
+
+.experiance_image {
+  padding-left: 30px;
+  height: 100%;
+  position: relative;
+}
+.experiance_image > button {
+  padding: 42px 45px;
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -80px;
+  bottom: -80px;
+}
+.experiance_image > button > h1 {
+  font-size: 4rem;
+  margin-bottom: 30px;
+}
+.experiance_image > button > span {
+  font-size: 26px;
 }
