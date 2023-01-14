@@ -1,6 +1,128 @@
+/* font import link */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lora:ital,wght@1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,500;1,400&family=Poppins:wght@400;500;600;700&family=Varela&family=Work+Sans:wght@400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
 }
 /* color variable */
+:root {
+  --white: #fff;
+  --oldlace: #fff4e7;
+  --dark01: #131313;
+  --dark02: #424242;
+  --dark03: #727272;
+  --darkOrange: #ff900e;
+}
+/* comon css */
+.container {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 50px 25px;
+}
+
+.section_title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 52.79px;
+  color: var(--dark01);
+}
+
+.section_des {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 30px 0;
+  color: var(--dark03);
+}
+.btn_primary {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23.5px;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--darkOrange);
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* Header section start */
+
+header {
+  background-color: var(--oldlace);
+}
+
+.nav_bar {
+  display: flex;
+  justify-content: space-between;
+}
+.nav_bar > ul {
+  list-style-type: none;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.nav_bar > ul > li {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  color: var(--dark02);
+  cursor: pointer;
+}
+
+/* Banner section start */
+
+.baner_text {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 115px;
+}
+.baner_text > h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 75px;
+  color: var(--dark01);
+}
+
+.baner_image img {
+  max-width: 100%;
+}
+
+.baner_text > button {
+  margin-bottom: 50px;
+}
+
+/* Feature section */
+.features {
+  display: flex;
+  justify-content: space-between;
+}
+.feature_images img {
+  max-width: 332px;
+}
+.feature_images {
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.feature_text {
+  width: 520px;
+  padding-left: 30px;
+  display: grid;
+  place-items: center;
+  justify-content: center;
+}
+
+.feature_text .gray {
+  color: var(--dark03);
+}
+.feature_text .orange {
+  color: var(--darkOrange);
+}
